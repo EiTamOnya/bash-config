@@ -8,7 +8,7 @@ install_fzf:
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 	~/.fzf/install --key-bindings --completion --update-rc
 add_aliases:
-	cat aliases >> ~/.bashrc
-all: backup_bashrc install_ble install_fzf add_aliases source
+	cat aliases_and_ps1 >> ~/.bashrc
+all: backup_bashrc install_ble install_fzf add_aliases
 clean:
 	rm -rf ble.sh
